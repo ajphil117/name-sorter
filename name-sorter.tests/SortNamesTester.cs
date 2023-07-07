@@ -47,12 +47,12 @@ namespace name_sorter.tests
             };
 
             List<Names> sortedNames = namesListGenerator(sortedGivenNames, sortedLastNames);
-            List<string> sortedNamesAnswer = new List<string>();
+            List<string> sortedExpected = new List<string>();
 
             // Convert sortedNames to list of strings
             foreach (Names name in sortedNames)
             {
-                sortedNamesAnswer.Add(name.ToString());
+                sortedExpected.Add(name.ToString());
             }
 
             // Unsorted names list
@@ -86,10 +86,10 @@ namespace name_sorter.tests
             List<Names> unsortedNames = namesListGenerator(givenNames, lastNames);            
 
             // Sort unsorted names
-            List<string> sortedTest = Program.SortNames(unsortedNames);
+            List<string> sortedActual = Program.SortNames(unsortedNames);
 
             // Compare the output to the pre-sorted names
-            CollectionAssert.AreEqual(sortedNamesAnswer, sortedTest);
+            CollectionAssert.AreEqual(sortedExpected, sortedActual);
         }
 
         /*
@@ -118,12 +118,12 @@ namespace name_sorter.tests
             };
 
             List<Names> sortedNames = namesListGenerator(sortedGivenNames, sortedLastNames);
-            List<string> sortedNamesAnswer = new List<string>();
+            List<string> sortedExpected = new List<string>();
 
             // Convert sortedNames to list of strings
             foreach (Names name in sortedNames)
             {
-                sortedNamesAnswer.Add(name.ToString());
+                sortedExpected.Add(name.ToString());
             }
 
             // Unsorted names list
@@ -147,10 +147,10 @@ namespace name_sorter.tests
             List<Names> unsortedNames = namesListGenerator(givenNames, lastNames);
 
             // Sort unsorted names
-            List<string> sortedTest = Program.SortNames(unsortedNames);
+            List<string> sortedActual = Program.SortNames(unsortedNames);
 
             // Compare the output to the pre-sorted names
-            CollectionAssert.AreEqual(sortedNamesAnswer, sortedTest);
+            CollectionAssert.AreEqual(sortedExpected, sortedActual);
         }
 
         /*
@@ -179,12 +179,12 @@ namespace name_sorter.tests
             };
 
             List<Names> sortedNames = namesListGenerator(sortedGivenNames, sortedLastNames);
-            List<string> sortedNamesAnswer = new List<string>();
+            List<string> sortedExpected = new List<string>();
 
             // Convert sortedNames to list of strings
             foreach (Names name in sortedNames)
             {
-                sortedNamesAnswer.Add(name.ToString());
+                sortedExpected.Add(name.ToString());
             }
 
             // Unsorted names list
@@ -208,10 +208,10 @@ namespace name_sorter.tests
             List<Names> unsortedNames = namesListGenerator(givenNames, lastNames);
 
             // Sort unsorted names
-            List<string> sortedTest = Program.SortNames(unsortedNames);
+            List<string> sortedActual = Program.SortNames(unsortedNames);
 
             // Compare the output to the pre-sorted names
-            CollectionAssert.AreEqual(sortedNamesAnswer, sortedTest);
+            CollectionAssert.AreEqual(sortedExpected, sortedActual);
         }
 
        private List<Names> namesListGenerator(List<string> givenNames, List<string> lastNames)

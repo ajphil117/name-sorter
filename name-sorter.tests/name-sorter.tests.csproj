@@ -25,4 +25,16 @@
     <ProjectReference Include="..\name-sorter\name-sorter.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="samples\empty.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="samples\noGiven.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="samples\simpleNames.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

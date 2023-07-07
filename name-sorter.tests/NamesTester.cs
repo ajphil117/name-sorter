@@ -13,8 +13,8 @@ namespace name_sorter.tests
         [TestMethod]
         public void toStringTest()
         {
-            var a = new Names("Hunter Uriah Mathew", "Clarke");
-            Assert.AreEqual(a.ToString(), "Hunter Uriah Mathew Clarke");
+            Names expected = new Names("Hunter Uriah Mathew", "Clarke");
+            Assert.AreEqual(expected.ToString(), "Hunter Uriah Mathew Clarke");
         }
     }
 }
