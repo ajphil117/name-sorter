@@ -8,7 +8,7 @@ namespace name_sorter
 {
     /// <summary>
     /// This class handels all file operations.
-    /// It contains the method to load and save new/overwrite existing text files.
+    /// It contains the methods to load and save new/overwrite existing text files.
     /// </summary>
     public class FileOperation
     {
@@ -21,50 +21,62 @@ namespace name_sorter
         public static List<Names> LoadFile(string FILE_PATH)
         {
             // Variables
-            string fileError = "Failed: File failed to load..";
+            string readException = "The file could not be read.";
+            string invalidException = "The names file provided is invalid.";
+            string[] readNames;
             List<string> fileContents = new List<string>();
+            int finalSpace;
             List<Names> namesList = new List<Names> { };
 
 
-            //Check file state
+            // Try to read file
             try
             {
                 // Load file and assign to list variable
-                fileContents = File.ReadAllLines(FILE_PATH).ToList();
-
-                // Create list of Name objects
-                foreach (var line in fileContents)
-                {
-                    int finalSpace = line.LastIndexOf(" ");
-                    if (finalSpace != -1)
-                    {
-                        string givenNames = line[..finalSpace];
-                        string lastName = line[(finalSpace + 1)..];
-
-                        namesList.Add(new Names(givenNames, lastName));
-                    }
-                }
+                readNames = File.ReadAllLines(FILE_PATH);
+                fileContents = readNames.ToList();               
             }
-            catch (Exception ex)
+            catch
             {
-                // File is open, stop program:
-                Console.WriteLine(fileError);
+                // File cannot be read, throw error and stop program
+                throw new InvalidNamesFileException(readException);
             }
 
-            // Return list of Name objects
+            // Create list of Names objects
+            foreach (var name in fileContents)
+            {
+                finalSpace = name.LastIndexOf(" ");
+                if (finalSpace < 1)
+                {
+                    // Missing given names, throw error and stop program
+                    throw new InvalidNamesFileException(invalidException);
+                }
+
+                string givenNames = name.Substring(0, finalSpace);
+                string lastName = name.Substring(finalSpace + 1);
+
+                namesList.Add(new Names(givenNames, lastName));
+            }
+
+            // Return list of Names objects
             return namesList;
         }
 
         /// <summary>
-        /// This method saves a file to the current working directory of the sorted names.
+        /// This method saves a file of sorted names called "sorted-names-list.txt"
+        /// to the curent working directory.
         /// If the files already exists, it will overwrite it.
         /// </summary>
         /// 
-        /// <param name="filePath"> The path to save the file. </param>
-        /// <param name="namesArray"> The sorted names to save to the file. </param>
-        public static void SaveFile(string filePath, string[] namesArray)
+        /// <param name="namesArray"> The sorted names to save to the file in string array format. </param>
+        
+        public static void SaveFile(string[] namesArray)
         {
-            File.WriteAllLines(filePath, namesArray);
+            // Variables
+            string filePath = String.Format(@"{0}\sorted-names-list.txt", Environment.CurrentDirectory);
+
+            // Save file
+            File.WriteAllLines(filePath.ToString(), namesArray);
         }
     }
 }

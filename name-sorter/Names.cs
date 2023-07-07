@@ -16,11 +16,11 @@ namespace name_sorter
         public string lastName { get; }
         
         /// <summary>
-        /// Constructor for a Names object.
+        /// Constructor for the Names object.
         /// </summary>
         /// 
-        /// <param name="givenNames"> The given names of the person. </param>
-        /// <param name="lastName"> The last name of the person. </param>
+        /// <param name="givenNames"> The given names. </param>
+        /// <param name="lastName"> The last name. </param>
         public Names(string givenNames, string lastName)
         {
             this.givenNames = givenNames;
@@ -28,10 +28,38 @@ namespace name_sorter
         }
 
         /// <summary>
-        /// This method converts a Names object into a string.
+        /// This override method converts a Names object into a string.
         /// </summary>
         /// 
         /// <returns> The string represtation of the Names object. </returns>
         public override string ToString() => $"{givenNames} {lastName}";
+
+        /// <summary>
+        /// This override method checks that two Names objects are equal.
+        /// </summary>
+        /// 
+        /// <param name="obj"> The Names object to test against. </param>
+        /// <returns> True if the Names objects are equal, false otherwise. </returns>
+        public override bool Equals(Object obj)
+        {
+            // Variables
+            Names that = (Names)obj;
+
+            // Check that both objects are Names objects
+            if (obj == null || GetType() != obj.GetType())
+            {
+                return false;
+            }            
+            
+            // Check match
+            return givenNames == that.givenNames && lastName == that.lastName;
+        }
+
+        /// <summary>
+        /// This override method converts a Names object into a string.
+        /// </summary>
+        /// 
+        /// <returns> The hash code for the Names object. </returns>
+        public override int GetHashCode() => givenNames.GetHashCode() * 97 + lastName.GetHashCode();
     }
 }

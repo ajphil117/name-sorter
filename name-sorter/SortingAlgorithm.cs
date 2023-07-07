@@ -10,8 +10,8 @@ namespace name_sorter
     {
 
         /// <summary>
-        /// This method sorts the name list by last names first, then any given names and
-        /// tyhen converts the list into a string list to be returned.
+        /// This method sorts the names list by last names first, then any given names and
+        /// then converts the list into a string list to be returned.
         /// </summary>
         /// 
         /// <param name="unsortedNames"> The names list to sort. </param>

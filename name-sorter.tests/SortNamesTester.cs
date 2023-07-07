@@ -1,22 +1,23 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using name_sorter;
-using Microsoft.VisualBasic;
-using System.Diagnostics.Metrics;
-using System.Collections.Generic;
-
 
 namespace name_sorter.tests
 {
+    /// <summary>
+    /// This test class tests the methods within the SortingAlgorithm class.
+    /// </summary>
     [TestClass]
     public class SortNamesTester
     {
-        /*
-         * Check that the SortNames method works correctly under simple circumstances
-         */
+        /// <summary>
+        /// Tests the SortingAlgorithm method SortNames under simple circumstances.
+        /// </summary>
         [TestMethod]
         public void simpleSortTest()
         {
+            // Variables
+            List<string> sortedExpected = new List<string>();
+
             // Create sorted and unsorted names lists to compare           
             // Sorted names list
             List<string> sortedGivenNames = new List<string> {
@@ -46,9 +47,8 @@ namespace name_sorter.tests
                 "Yoder"
             };
 
-            List<Names> sortedNames = namesListGenerator(sortedGivenNames, sortedLastNames);
-            List<string> sortedExpected = new List<string>();
-
+            List<Names> sortedNames = NamesListGenerator.namesListGenerator(sortedGivenNames, sortedLastNames);
+            
             // Convert sortedNames to list of strings
             foreach (Names name in sortedNames)
             {
@@ -83,7 +83,7 @@ namespace name_sorter.tests
                 "Ritter"
             };
             
-            List<Names> unsortedNames = namesListGenerator(givenNames, lastNames);            
+            List<Names> unsortedNames = NamesListGenerator.namesListGenerator(givenNames, lastNames);            
 
             // Sort unsorted names
             List<string> sortedActual = SortingAlgorithm.SortNames(unsortedNames);
@@ -92,12 +92,15 @@ namespace name_sorter.tests
             CollectionAssert.AreEqual(sortedExpected, sortedActual);
         }
 
-        /*
-         * Check that the SortNames method works correctly with duplicate last names
-         */
+        /// <summary>
+        /// Tests the SortingAlgorithm method SortNames with duplicate last names.
+        /// </summary>
         [TestMethod]
         public void sameLastNameTest()
         {
+            // Variables
+            List<string> sortedExpected = new List<string>();
+
             // Create sorted and unsorted names lists to compare           
             // Sorted names list
             List<string> sortedGivenNames = new List<string> {
@@ -117,8 +120,7 @@ namespace name_sorter.tests
                 "Smith"
             };
 
-            List<Names> sortedNames = namesListGenerator(sortedGivenNames, sortedLastNames);
-            List<string> sortedExpected = new List<string>();
+            List<Names> sortedNames = NamesListGenerator.namesListGenerator(sortedGivenNames, sortedLastNames);
 
             // Convert sortedNames to list of strings
             foreach (Names name in sortedNames)
@@ -144,7 +146,7 @@ namespace name_sorter.tests
                 "Smith"                
             };
 
-            List<Names> unsortedNames = namesListGenerator(givenNames, lastNames);
+            List<Names> unsortedNames = NamesListGenerator.namesListGenerator(givenNames, lastNames);
 
             // Sort unsorted names
             List<string> sortedActual = SortingAlgorithm.SortNames(unsortedNames);
@@ -153,12 +155,15 @@ namespace name_sorter.tests
             CollectionAssert.AreEqual(sortedExpected, sortedActual);
         }
 
-        /*
-         * Check that the SortNames method works correctly with duplicate given names
-         */
+        /// <summary>
+        /// Tests the SortingAlgorithm method SortNames with duplicate given names.
+        /// </summary>
         [TestMethod]
         public void sameGivenNamesTest()
         {
+            // Variables
+            List<string> sortedExpected = new List<string>();
+
             // Create sorted and unsorted names lists to compare           
             // Sorted names list
             List<string> sortedGivenNames = new List<string> {
@@ -178,8 +183,7 @@ namespace name_sorter.tests
                 "Smith"
             };
 
-            List<Names> sortedNames = namesListGenerator(sortedGivenNames, sortedLastNames);
-            List<string> sortedExpected = new List<string>();
+            List<Names> sortedNames = NamesListGenerator.namesListGenerator(sortedGivenNames, sortedLastNames);
 
             // Convert sortedNames to list of strings
             foreach (Names name in sortedNames)
@@ -205,23 +209,13 @@ namespace name_sorter.tests
                 "Smith"
             };
 
-            List<Names> unsortedNames = namesListGenerator(givenNames, lastNames);
+            List<Names> unsortedNames = NamesListGenerator.namesListGenerator(givenNames, lastNames);
 
             // Sort unsorted names
             List<string> sortedActual = SortingAlgorithm.SortNames(unsortedNames);
 
             // Compare the output to the pre-sorted names
             CollectionAssert.AreEqual(sortedExpected, sortedActual);
-        }
-
-       private List<Names> namesListGenerator(List<string> givenNames, List<string> lastNames)
-        {
-            var names = new List<Names> { };
-            for (int i = 0; i < givenNames.Count; ++i)
-            {
-                names.Add(new Names(givenNames[i], lastNames[i]));
-            }
-            return names;
         }
     }
 }

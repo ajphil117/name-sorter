@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -43,7 +42,7 @@ namespace name_sorter
             }
 
             // Save sorted names to file
-            FileOperation.SaveFile(SAVE_FILE_PATH.ToString(), sortedNames.ToArray());
+            FileOperation.SaveFile(sortedNames.ToArray());
         }      
     }
 }
