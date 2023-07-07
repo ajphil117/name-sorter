@@ -8,7 +8,7 @@ namespace name_sorter.tests
     public class FileImportTester
     {
         [TestMethod]
-        [DeploymentItem(@"samples\simpleNames.txt")]
+        //[DeploymentItem(@"samples\simpleNames.txt")]
         public void importTest()
         {
             // Create simple names list
@@ -47,7 +47,7 @@ namespace name_sorter.tests
             }
 
             List<Names> namesExpected = new List<Names>();
-            namesExpected = Program.LoadFile("simpleNames.txt");
+            namesExpected = FileOperation.LoadFile("simpleNames.txt");
             
 
             // Print sorted names

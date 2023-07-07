@@ -86,7 +86,7 @@ namespace name_sorter.tests
             List<Names> unsortedNames = namesListGenerator(givenNames, lastNames);            
 
             // Sort unsorted names
-            List<string> sortedActual = Program.SortNames(unsortedNames);
+            List<string> sortedActual = SortingAlgorithm.SortNames(unsortedNames);
 
             // Compare the output to the pre-sorted names
             CollectionAssert.AreEqual(sortedExpected, sortedActual);
@@ -147,7 +147,7 @@ namespace name_sorter.tests
             List<Names> unsortedNames = namesListGenerator(givenNames, lastNames);
 
             // Sort unsorted names
-            List<string> sortedActual = Program.SortNames(unsortedNames);
+            List<string> sortedActual = SortingAlgorithm.SortNames(unsortedNames);
 
             // Compare the output to the pre-sorted names
             CollectionAssert.AreEqual(sortedExpected, sortedActual);
@@ -208,7 +208,7 @@ namespace name_sorter.tests
             List<Names> unsortedNames = namesListGenerator(givenNames, lastNames);
 
             // Sort unsorted names
-            List<string> sortedActual = Program.SortNames(unsortedNames);
+            List<string> sortedActual = SortingAlgorithm.SortNames(unsortedNames);
 
             // Compare the output to the pre-sorted names
             CollectionAssert.AreEqual(sortedExpected, sortedActual);
