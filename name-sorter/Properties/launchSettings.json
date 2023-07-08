@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "name-sorter": {
-      "commandName": "Project",
-      "commandLineArgs": "./missingGiven.txt"
-    }
-  }
-}
