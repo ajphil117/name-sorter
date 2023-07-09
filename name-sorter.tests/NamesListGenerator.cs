@@ -4,18 +4,18 @@ using System;
 namespace name_sorter.tests
 {
     /// <summary>
-    /// This class holds the method to generate a Names list.
+    /// This class holds the method to generate a list of Names objects.
     /// </summary>
     public class NamesListGenerator
     {
         /// <summary>
-        /// Method to generate list of names.
+        /// Method to generate list of Names objects.
         /// </summary>
         /// 
         /// <param name="givenNames"> The given names. </param>
         /// <param name="lastNames"> The last names. </param>
-        /// <returns> Returns a list of Names objects. </returns>
-        public static List<Names> namesListGenerator(List<string> givenNames, List<string> lastNames)
+        /// <returns> Returns a list of Name objects. </returns>
+        public static List<Names> GenerateNamesList(List<string> givenNames, List<string> lastNames)
         {
             // Variables
             var names = new List<Names> { };
@@ -28,6 +28,6 @@ namespace name_sorter.tests
 
             // Return list
             return names;
-        } 
+        }
     }
 }

@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>name-sorter</name>
+    </assembly>
+    <members>
+        <member name="T:name_sorter.FileOperation">
+            <summary>
+            This class handles all file operations.
+            It contains the methods to load and save new/overwrite existing text files.
+            </summary>
+        </member>
+        <member name="M:name_sorter.FileOperation.LoadFile(System.String)">
+            <summary>
+            This method loads the names list text file from the file path given.
+            </summary>
+            
+            <param name="FILE_PATH"> The file path to load file from. </param>
+            <returns> Returns list of names to be sorted. </returns>
+        </member>
+        <member name="M:name_sorter.FileOperation.SaveFile(System.String[])">
+            <summary>
+            This method saves a file of sorted names called "sorted-names-list.txt"
+            to the current working directory.
+            If the files already exists, it will overwrite it.
+            </summary>
+            
+            <param name="namesArray"> The sorted names to save to the file in string array format. </param>
+        </member>
+        <member name="T:name_sorter.InvalidNamesFileException">
+            <summary>
+            This class contains the exception that is thrown when the unsorted names file
+            is invalid (i.e. incorrect format or issues being read).
+            </summary>
+        </member>
+        <member name="M:name_sorter.InvalidNamesFileException.#ctor">
+            <summary>
+            The base class for the InvalidNamesFileException.
+            </summary>
+        </member>
+        <member name="M:name_sorter.InvalidNamesFileException.#ctor(System.String)">
+            <summary>
+            The class for InvalidNamesFileException with a message.
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:name_sorter.InvalidNamesFileException.#ctor(System.String,System.Exception)">
+            <summary>
+            The class for InvalidNamesFileException with a message and system exception.
+            </summary>
+            <param name="message"></param>
+            <param name="inner"></param>
+        </member>
+        <member name="T:name_sorter.Names">
+            <summary>
+            This class provides the methods for constructing a Names object and
+            converting the object into a string.
+            </summary>
+        </member>
+        <member name="P:name_sorter.Names.GivenNames">
+            <summary>
+            The givenNames property of a Names object.
+            </summary>
+        </member>
+        <member name="P:name_sorter.Names.LastName">
+            <summary>
+            The lastName property of a Names object.
+            </summary>
+        </member>
+        <member name="M:name_sorter.Names.#ctor(System.String,System.String)">
+            <summary>
+            Constructor for the Names object.
+            </summary>
+            
+            <param name="givenNames"> The given names. </param>
+            <param name="lastName"> The last name. </param>
+        </member>
+        <member name="M:name_sorter.Names.ToString">
+            <summary>
+            This override method converts a Names object into a string.
+            </summary>
+            
+            <returns> The string representation of the Names object. </returns>
+        </member>
+        <member name="M:name_sorter.Names.Equals(System.Object)">
+            <summary>
+            This override method checks that two Names objects are equal.
+            </summary>
+            
+            <param name="obj"> The Names object to test against. </param>
+            <returns> True if the Names objects are equal, false otherwise. </returns>
+        </member>
+        <member name="M:name_sorter.Names.GetHashCode">
+            <summary>
+            This override method converts a Names object into a string.
+            </summary>
+            
+            <returns> The hash code for the Names object. </returns>
+        </member>
+        <member name="T:name_sorter.Program">
+            <summary> 
+            This class holds the Main to run the program.
+            </summary>
+        </member>
+        <member name="T:name_sorter.SortingAlgorithm">
+            <summary>
+            The class to sort names lists.
+            </summary>
+        </member>
+        <member name="M:name_sorter.SortingAlgorithm.SortNames(System.Collections.Generic.List{name_sorter.Names})">
+            <summary>
+            This method sorts the names list by last names first, then any given names and
+            then converts the list into a string list to be returned.
+            </summary>
+            
+            <param name="unsortedNames"> The names list to sort. </param>
+            <returns> Returns a list of strings containing the sorted names. </returns>
+        </member>
+    </members>
+</doc>

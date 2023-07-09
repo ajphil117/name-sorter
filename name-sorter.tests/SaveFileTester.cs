@@ -15,7 +15,7 @@ namespace name_sorter.tests
         /// Tests the FileOperation class SaveFile method.
         /// </summary>
         [TestMethod]
-        public void simpleSaveTest()
+        public void SimpleSaveTest()
         {
             // Variables
             List<string> sortedExpected = new List<string>();
@@ -48,7 +48,7 @@ namespace name_sorter.tests
                 "Yoder"
             };
 
-            List<Names> sortedNames = NamesListGenerator.namesListGenerator(sortedGivenNames, sortedLastNames);
+            List<Names> sortedNames = NamesListGenerator.GenerateNamesList(sortedGivenNames, sortedLastNames);
 
             // Convert sortedNames to list of strings
             foreach (Names name in sortedNames)
@@ -60,7 +60,7 @@ namespace name_sorter.tests
             FileOperation.SaveFile(sortedExpected.ToArray());
 
             // Check match
-            filesEqual("samples/sortedNames.txt", "sorted-names-list.txt");
+            FilesEqual("samples/sortedNames.txt", "sorted-names-list.txt");
         }
 
         /// <summary>
@@ -69,7 +69,7 @@ namespace name_sorter.tests
         /// 
         /// <param name="answerFile"> The path of the expected answer file. </param>
         /// <param name="testFile"> The path of the actual test file. </param>
-        private void filesEqual(string answerFile, string testFile)
+        private static void FilesEqual(string answerFile, string testFile)
         {
             // Variables
             byte[] hashOne;
@@ -78,18 +78,14 @@ namespace name_sorter.tests
             // Get hash values of file contents
             using (var md5 = MD5.Create())
             {
-                using (var stream = File.OpenRead(answerFile))
-                {
-                    hashOne = md5.ComputeHash(stream);
-                }
+                using var stream = File.OpenRead(answerFile);
+                hashOne = md5.ComputeHash(stream);
             }
             
             using (var md5 = MD5.Create())
             {
-                using (var stream = File.OpenRead(testFile))
-                {
-                    hashTwo = md5.ComputeHash(stream);
-                }
+                using var stream = File.OpenRead(testFile);
+                hashTwo = md5.ComputeHash(stream);
             }
 
             // Check match

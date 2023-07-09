@@ -15,9 +15,9 @@ namespace name_sorter.tests
         /// Tests the Names class ToString method.
         /// </summary>
         [TestMethod]
-        public void toStringTest()
+        public void ToStringTest()
         {
-            // Create Names object
+            // Create Name object
             Names expected = new Names("Hunter Uriah Mathew", "Clarke");
 
             // Check match
@@ -28,12 +28,11 @@ namespace name_sorter.tests
         /// Tests the Names class Equals method when the objects are equal.
         /// </summary>
         [TestMethod]
-        public void equalsTest()
+        public void EqualsTest()
         {
-            // Create Names objects
+            // Create Name objects
             Names namesOne = new Names("Hunter Uriah Mathew", "Clarke");
             Names namesTwo = new Names("Hunter Uriah Mathew", "Clarke");
-            Names namesThree = new Names("London", "Lindsey");
 
             // Check match
             namesOne.Equals(namesTwo);
@@ -43,9 +42,9 @@ namespace name_sorter.tests
         /// Tests the Names class Equals method when the objects are not equal.
         /// </summary>
         [TestMethod]
-        public void notEqualTest()
+        public void NotEqualTest()
         {
-            // Create Names objects
+            // Create Name objects
             Names namesOne = new Names("Hunter Uriah Mathew", "Clarke");
             Names namesTwo = new Names("London", "Lindsey");
 

@@ -16,23 +16,21 @@ namespace name_sorter
         private static void Main(string[] args)
         {
             // Variables        
-            string SAVE_FILE_PATH = String.Format(@"{0}\sorted-names-list.txt", Environment.CurrentDirectory);
-
-            List<Names> unsortedNames = new List<Names>();
-            List<string> sortedNames = new List<string>();
+            List<Names> unsortedNames;
+            List<string> sortedNames;
 
             // Load names file
             try
             {
                 unsortedNames = FileOperation.LoadFile(args[0]);
             }
-            catch (IndexOutOfRangeException ex) 
+            catch 
             {
                 Console.WriteLine("Please provide file path as an argument.");
                 return;
             }            
 
-            // Sort Names
+            // Sort names
             sortedNames = SortingAlgorithm.SortNames(unsortedNames);
 
             // Print sorted names

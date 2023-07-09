@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace name_sorter
 {
+    /// <summary>
+    /// The class to sort names lists.
+    /// </summary>
     public class SortingAlgorithm
     {
-
         /// <summary>
         /// This method sorts the names list by last names first, then any given names and
         /// then converts the list into a string list to be returned.
@@ -23,8 +25,8 @@ namespace name_sorter
             List<string> sortedNamesString = new List<string>();
 
             // Sort names
-            sortedNames = unsortedNames.OrderBy(name => name.lastName)
-                                       .ThenBy(person => person.givenNames)
+            sortedNames = unsortedNames.OrderBy(name => name.LastName)
+                                       .ThenBy(person => person.GivenNames)
                                        .ToList();
 
             // Convert to list of strings

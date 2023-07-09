@@ -7,13 +7,20 @@ using System.Threading.Tasks;
 namespace name_sorter
 {
     /// <summary>
-    /// This class provides the methods for constucting a Names object and
+    /// This class provides the methods for constructing a Names object and
     /// converting the object into a string.
     /// </summary>
     public class Names
     {
-        public string givenNames { get; }
-        public string lastName { get; }
+        /// <summary>
+        /// The givenNames property of a Names object.
+        /// </summary>
+        public string GivenNames { get; }
+        
+        /// <summary>
+        /// The lastName property of a Names object.
+        /// </summary>
+        public string LastName { get; }
         
         /// <summary>
         /// Constructor for the Names object.
@@ -23,16 +30,16 @@ namespace name_sorter
         /// <param name="lastName"> The last name. </param>
         public Names(string givenNames, string lastName)
         {
-            this.givenNames = givenNames;
-            this.lastName = lastName;
+            this.GivenNames = givenNames;
+            this.LastName = lastName;
         }
 
         /// <summary>
         /// This override method converts a Names object into a string.
         /// </summary>
         /// 
-        /// <returns> The string represtation of the Names object. </returns>
-        public override string ToString() => $"{givenNames} {lastName}";
+        /// <returns> The string representation of the Names object. </returns>
+        public override string ToString() => $"{GivenNames} {LastName}";
 
         /// <summary>
         /// This override method checks that two Names objects are equal.
@@ -52,7 +59,7 @@ namespace name_sorter
             }            
             
             // Check match
-            return givenNames == that.givenNames && lastName == that.lastName;
+            return GivenNames == that.GivenNames && LastName == that.LastName;
         }
 
         /// <summary>
@@ -60,6 +67,6 @@ namespace name_sorter
         /// </summary>
         /// 
         /// <returns> The hash code for the Names object. </returns>
-        public override int GetHashCode() => givenNames.GetHashCode() * 97 + lastName.GetHashCode();
+        public override int GetHashCode() => GivenNames.GetHashCode() * 97 + LastName.GetHashCode();
     }
 }

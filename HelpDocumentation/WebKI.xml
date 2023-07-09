@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+
+  <HelpKINode Title="EmptyFileTest method" Url="html/M-name_sorter.tests.LoadFileTester.EmptyFileTest.htm" />
+  <HelpKINode Title="Equals method" Url="html/M-name_sorter.Names.Equals.htm" />
+  <HelpKINode Title="EqualsTest method" Url="html/M-name_sorter.tests.NamesTester.EqualsTest.htm" />
+  <HelpKINode Title="FileOperation class" Url="html/AllMembers.T-name_sorter.FileOperation.htm" />
+  <HelpKINode Title="FileOperation class" Url="html/T-name_sorter.FileOperation.htm" />
+  <HelpKINode Title="FileOperation class">
+    <HelpKINode Title="about FileOperation class" Url="html/T-name_sorter.FileOperation.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-name_sorter.FileOperation.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-name_sorter.FileOperation.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FileOperation.LoadFile method" Url="html/M-name_sorter.FileOperation.LoadFile.htm" />
+  <HelpKINode Title="FileOperation.SaveFile method" Url="html/M-name_sorter.FileOperation.SaveFile.htm" />
+  <HelpKINode Title="GenerateNamesList method" Url="html/M-name_sorter.tests.NamesListGenerator.GenerateNamesList.htm" />
+  <HelpKINode Title="GetHashCode method" Url="html/M-name_sorter.Names.GetHashCode.htm" />
+  <HelpKINode Title="GivenNames property" Url="html/P-name_sorter.Names.GivenNames.htm" />
+  <HelpKINode Title="ImportTest method" Url="html/M-name_sorter.tests.LoadFileTester.ImportTest.htm" />
+  <HelpKINode Title="InvalidNamesFileException class" Url="html/AllMembers.T-name_sorter.InvalidNamesFileException.htm" />
+  <HelpKINode Title="InvalidNamesFileException class" Url="html/T-name_sorter.InvalidNamesFileException.htm" />
+  <HelpKINode Title="InvalidNamesFileException class">
+    <HelpKINode Title="about InvalidNamesFileException class" Url="html/T-name_sorter.InvalidNamesFileException.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-name_sorter.InvalidNamesFileException.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-name_sorter.InvalidNamesFileException.-ctor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InvalidNamesFileException.InvalidNamesFileException constructor" Url="html/Overload-name_sorter.InvalidNamesFileException.-ctor.htm" />
+  <HelpKINode Title="InvalidNamesTest method" Url="html/M-name_sorter.tests.LoadFileTester.InvalidNamesTest.htm" />
+  <HelpKINode Title="InvalidPathTest method" Url="html/M-name_sorter.tests.LoadFileTester.InvalidPathTest.htm" />
+  <HelpKINode Title="LastName property" Url="html/P-name_sorter.Names.LastName.htm" />
+  <HelpKINode Title="LoadFile method" Url="html/M-name_sorter.FileOperation.LoadFile.htm" />
+  <HelpKINode Title="LoadFileTester class" Url="html/AllMembers.T-name_sorter.tests.LoadFileTester.htm" />
+  <HelpKINode Title="LoadFileTester class" Url="html/T-name_sorter.tests.LoadFileTester.htm" />
+  <HelpKINode Title="LoadFileTester class">
+    <HelpKINode Title="about LoadFileTester class" Url="html/T-name_sorter.tests.LoadFileTester.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-name_sorter.tests.LoadFileTester.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-name_sorter.tests.LoadFileTester.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LoadFileTester.EmptyFileTest method" Url="html/M-name_sorter.tests.LoadFileTester.EmptyFileTest.htm" />
+  <HelpKINode Title="LoadFileTester.ImportTest method" Url="html/M-name_sorter.tests.LoadFileTester.ImportTest.htm" />
+  <HelpKINode Title="LoadFileTester.InvalidNamesTest method" Url="html/M-name_sorter.tests.LoadFileTester.InvalidNamesTest.htm" />
+  <HelpKINode Title="LoadFileTester.InvalidPathTest method" Url="html/M-name_sorter.tests.LoadFileTester.InvalidPathTest.htm" />
+  <HelpKINode Title="Names class" Url="html/AllMembers.T-name_sorter.Names.htm" />
+  <HelpKINode Title="Names class" Url="html/T-name_sorter.Names.htm" />
+  <HelpKINode Title="Names class">
+    <HelpKINode Title="about Names class" Url="html/T-name_sorter.Names.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-name_sorter.Names.htm" />
+    <HelpKINode Title="constructor" Url="html/M-name_sorter.Names.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-name_sorter.Names.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-name_sorter.Names.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Names.Equals method" Url="html/M-name_sorter.Names.Equals.htm" />
+  <HelpKINode Title="Names.GetHashCode method" Url="html/M-name_sorter.Names.GetHashCode.htm" />
+  <HelpKINode Title="Names.GivenNames property" Url="html/P-name_sorter.Names.GivenNames.htm" />
+  <HelpKINode Title="Names.LastName property" Url="html/P-name_sorter.Names.LastName.htm" />
+  <HelpKINode Title="Names.Names constructor" Url="html/M-name_sorter.Names.-ctor.htm" />
+  <HelpKINode Title="Names.ToString method" Url="html/M-name_sorter.Names.ToString.htm" />
+  <HelpKINode Title="NamesListGenerator class" Url="html/AllMembers.T-name_sorter.tests.NamesListGenerator.htm" />
+  <HelpKINode Title="NamesListGenerator class" Url="html/T-name_sorter.tests.NamesListGenerator.htm" />
+  <HelpKINode Title="NamesListGenerator class">
+    <HelpKINode Title="about NamesListGenerator class" Url="html/T-name_sorter.tests.NamesListGenerator.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-name_sorter.tests.NamesListGenerator.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-name_sorter.tests.NamesListGenerator.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NamesListGenerator.GenerateNamesList method" Url="html/M-name_sorter.tests.NamesListGenerator.GenerateNamesList.htm" />
+  <HelpKINode Title="NamesTester class" Url="html/AllMembers.T-name_sorter.tests.NamesTester.htm" />
+  <HelpKINode Title="NamesTester class" Url="html/T-name_sorter.tests.NamesTester.htm" />
+  <HelpKINode Title="NamesTester class">
+    <HelpKINode Title="about NamesTester class" Url="html/T-name_sorter.tests.NamesTester.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-name_sorter.tests.NamesTester.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-name_sorter.tests.NamesTester.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NamesTester.EqualsTest method" Url="html/M-name_sorter.tests.NamesTester.EqualsTest.htm" />
+  <HelpKINode Title="NamesTester.NotEqualTest method" Url="html/M-name_sorter.tests.NamesTester.NotEqualTest.htm" />
+  <HelpKINode Title="NamesTester.ToStringTest method" Url="html/M-name_sorter.tests.NamesTester.ToStringTest.htm" />
+  <HelpKINode Title="name_sorter namespace" Url="html/N-name_sorter.htm" />
+  <HelpKINode Title="name_sorter.FileOperation class" Url="html/AllMembers.T-name_sorter.FileOperation.htm" />
+  <HelpKINode Title="name_sorter.FileOperation class" Url="html/T-name_sorter.FileOperation.htm" />
+  <HelpKINode Title="name_sorter.InvalidNamesFileException class" Url="html/AllMembers.T-name_sorter.InvalidNamesFileException.htm" />
+  <HelpKINode Title="name_sorter.InvalidNamesFileException class" Url="html/T-name_sorter.InvalidNamesFileException.htm" />
+  <HelpKINode Title="name_sorter.Names class" Url="html/AllMembers.T-name_sorter.Names.htm" />
+  <HelpKINode Title="name_sorter.Names class" Url="html/T-name_sorter.Names.htm" />
+  <HelpKINode Title="name_sorter.Program class" Url="html/T-name_sorter.Program.htm" />
+  <HelpKINode Title="name_sorter.SortingAlgorithm class" Url="html/AllMembers.T-name_sorter.SortingAlgorithm.htm" />
+  <HelpKINode Title="name_sorter.SortingAlgorithm class" Url="html/T-name_sorter.SortingAlgorithm.htm" />
+  <HelpKINode Title="name_sorter.tests namespace" Url="html/N-name_sorter.tests.htm" />
+  <HelpKINode Title="name_sorter.tests.LoadFileTester class" Url="html/AllMembers.T-name_sorter.tests.LoadFileTester.htm" />
+  <HelpKINode Title="name_sorter.tests.LoadFileTester class" Url="html/T-name_sorter.tests.LoadFileTester.htm" />
+  <HelpKINode Title="name_sorter.tests.NamesListGenerator class" Url="html/AllMembers.T-name_sorter.tests.NamesListGenerator.htm" />
+  <HelpKINode Title="name_sorter.tests.NamesListGenerator class" Url="html/T-name_sorter.tests.NamesListGenerator.htm" />
+  <HelpKINode Title="name_sorter.tests.NamesTester class" Url="html/AllMembers.T-name_sorter.tests.NamesTester.htm" />
+  <HelpKINode Title="name_sorter.tests.NamesTester class" Url="html/T-name_sorter.tests.NamesTester.htm" />
+  <HelpKINode Title="name_sorter.tests.SaveFileTester class" Url="html/AllMembers.T-name_sorter.tests.SaveFileTester.htm" />
+  <HelpKINode Title="name_sorter.tests.SaveFileTester class" Url="html/T-name_sorter.tests.SaveFileTester.htm" />
+  <HelpKINode Title="name_sorter.tests.SortNamesTester class" Url="html/AllMembers.T-name_sorter.tests.SortNamesTester.htm" />
+  <HelpKINode Title="name_sorter.tests.SortNamesTester class" Url="html/T-name_sorter.tests.SortNamesTester.htm" />
+  <HelpKINode Title="NotEqualTest method" Url="html/M-name_sorter.tests.NamesTester.NotEqualTest.htm" />
+  <HelpKINode Title="Program class" Url="html/T-name_sorter.Program.htm" />
+  <HelpKINode Title="Program class">
+    <HelpKINode Title="about Program class" Url="html/T-name_sorter.Program.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SameGivenNamesTest method" Url="html/M-name_sorter.tests.SortNamesTester.SameGivenNamesTest.htm" />
+  <HelpKINode Title="SameLastNameTest method" Url="html/M-name_sorter.tests.SortNamesTester.SameLastNameTest.htm" />
+  <HelpKINode Title="SaveFile method" Url="html/M-name_sorter.FileOperation.SaveFile.htm" />
+  <HelpKINode Title="SaveFileTester class" Url="html/AllMembers.T-name_sorter.tests.SaveFileTester.htm" />
+  <HelpKINode Title="SaveFileTester class" Url="html/T-name_sorter.tests.SaveFileTester.htm" />
+  <HelpKINode Title="SaveFileTester class">
+    <HelpKINode Title="about SaveFileTester class" Url="html/T-name_sorter.tests.SaveFileTester.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-name_sorter.tests.SaveFileTester.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-name_sorter.tests.SaveFileTester.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SaveFileTester.SimpleSaveTest method" Url="html/M-name_sorter.tests.SaveFileTester.SimpleSaveTest.htm" />
+  <HelpKINode Title="SimpleSaveTest method" Url="html/M-name_sorter.tests.SaveFileTester.SimpleSaveTest.htm" />
+  <HelpKINode Title="SimpleSortTest method" Url="html/M-name_sorter.tests.SortNamesTester.SimpleSortTest.htm" />
+  <HelpKINode Title="SortingAlgorithm class" Url="html/AllMembers.T-name_sorter.SortingAlgorithm.htm" />
+  <HelpKINode Title="SortingAlgorithm class" Url="html/T-name_sorter.SortingAlgorithm.htm" />
+  <HelpKINode Title="SortingAlgorithm class">
+    <HelpKINode Title="about SortingAlgorithm class" Url="html/T-name_sorter.SortingAlgorithm.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-name_sorter.SortingAlgorithm.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-name_sorter.SortingAlgorithm.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SortingAlgorithm.SortNames method" Url="html/M-name_sorter.SortingAlgorithm.SortNames.htm" />
+  <HelpKINode Title="SortNames method" Url="html/M-name_sorter.SortingAlgorithm.SortNames.htm" />
+  <HelpKINode Title="SortNamesTester class" Url="html/AllMembers.T-name_sorter.tests.SortNamesTester.htm" />
+  <HelpKINode Title="SortNamesTester class" Url="html/T-name_sorter.tests.SortNamesTester.htm" />
+  <HelpKINode Title="SortNamesTester class">
+    <HelpKINode Title="about SortNamesTester class" Url="html/T-name_sorter.tests.SortNamesTester.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-name_sorter.tests.SortNamesTester.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-name_sorter.tests.SortNamesTester.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SortNamesTester.SameGivenNamesTest method" Url="html/M-name_sorter.tests.SortNamesTester.SameGivenNamesTest.htm" />
+  <HelpKINode Title="SortNamesTester.SameLastNameTest method" Url="html/M-name_sorter.tests.SortNamesTester.SameLastNameTest.htm" />
+  <HelpKINode Title="SortNamesTester.SimpleSortTest method" Url="html/M-name_sorter.tests.SortNamesTester.SimpleSortTest.htm" />
+  <HelpKINode Title="ToString method" Url="html/M-name_sorter.Names.ToString.htm" />
+  <HelpKINode Title="ToStringTest method" Url="html/M-name_sorter.tests.NamesTester.ToStringTest.htm" />
+</HelpKI>

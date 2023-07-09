@@ -13,7 +13,7 @@ namespace name_sorter.tests
         /// Tests the SortingAlgorithm method SortNames under simple circumstances.
         /// </summary>
         [TestMethod]
-        public void simpleSortTest()
+        public void SimpleSortTest()
         {
             // Variables
             List<string> sortedExpected = new List<string>();
@@ -47,7 +47,7 @@ namespace name_sorter.tests
                 "Yoder"
             };
 
-            List<Names> sortedNames = NamesListGenerator.namesListGenerator(sortedGivenNames, sortedLastNames);
+            List<Names> sortedNames = NamesListGenerator.GenerateNamesList(sortedGivenNames, sortedLastNames);
             
             // Convert sortedNames to list of strings
             foreach (Names name in sortedNames)
@@ -83,7 +83,7 @@ namespace name_sorter.tests
                 "Ritter"
             };
             
-            List<Names> unsortedNames = NamesListGenerator.namesListGenerator(givenNames, lastNames);            
+            List<Names> unsortedNames = NamesListGenerator.GenerateNamesList(givenNames, lastNames);            
 
             // Sort unsorted names
             List<string> sortedActual = SortingAlgorithm.SortNames(unsortedNames);
@@ -96,7 +96,7 @@ namespace name_sorter.tests
         /// Tests the SortingAlgorithm method SortNames with duplicate last names.
         /// </summary>
         [TestMethod]
-        public void sameLastNameTest()
+        public void SameLastNameTest()
         {
             // Variables
             List<string> sortedExpected = new List<string>();
@@ -120,7 +120,7 @@ namespace name_sorter.tests
                 "Smith"
             };
 
-            List<Names> sortedNames = NamesListGenerator.namesListGenerator(sortedGivenNames, sortedLastNames);
+            List<Names> sortedNames = NamesListGenerator.GenerateNamesList(sortedGivenNames, sortedLastNames);
 
             // Convert sortedNames to list of strings
             foreach (Names name in sortedNames)
@@ -146,7 +146,7 @@ namespace name_sorter.tests
                 "Smith"                
             };
 
-            List<Names> unsortedNames = NamesListGenerator.namesListGenerator(givenNames, lastNames);
+            List<Names> unsortedNames = NamesListGenerator.GenerateNamesList(givenNames, lastNames);
 
             // Sort unsorted names
             List<string> sortedActual = SortingAlgorithm.SortNames(unsortedNames);
@@ -159,7 +159,7 @@ namespace name_sorter.tests
         /// Tests the SortingAlgorithm method SortNames with duplicate given names.
         /// </summary>
         [TestMethod]
-        public void sameGivenNamesTest()
+        public void SameGivenNamesTest()
         {
             // Variables
             List<string> sortedExpected = new List<string>();
@@ -183,7 +183,7 @@ namespace name_sorter.tests
                 "Smith"
             };
 
-            List<Names> sortedNames = NamesListGenerator.namesListGenerator(sortedGivenNames, sortedLastNames);
+            List<Names> sortedNames = NamesListGenerator.GenerateNamesList(sortedGivenNames, sortedLastNames);
 
             // Convert sortedNames to list of strings
             foreach (Names name in sortedNames)
@@ -209,7 +209,7 @@ namespace name_sorter.tests
                 "Smith"
             };
 
-            List<Names> unsortedNames = NamesListGenerator.namesListGenerator(givenNames, lastNames);
+            List<Names> unsortedNames = NamesListGenerator.GenerateNamesList(givenNames, lastNames);
 
             // Sort unsorted names
             List<string> sortedActual = SortingAlgorithm.SortNames(unsortedNames);

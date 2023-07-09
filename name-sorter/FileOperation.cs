@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace name_sorter
 {
     /// <summary>
-    /// This class handels all file operations.
+    /// This class handles all file operations.
     /// It contains the methods to load and save new/overwrite existing text files.
     /// </summary>
     public class FileOperation
@@ -24,9 +24,9 @@ namespace name_sorter
             string readException = "The file could not be read.";
             string invalidException = "The names file provided is invalid.";
             string[] readNames;
-            List<string> fileContents = new List<string>();
+            List<string> fileContents;
             int finalSpace;
-            List<Names> namesList = new List<Names> { };
+            List<Names> namesList = new List<Names>();
 
 
             // Try to read file
@@ -64,12 +64,11 @@ namespace name_sorter
 
         /// <summary>
         /// This method saves a file of sorted names called "sorted-names-list.txt"
-        /// to the curent working directory.
+        /// to the current working directory.
         /// If the files already exists, it will overwrite it.
         /// </summary>
         /// 
         /// <param name="namesArray"> The sorted names to save to the file in string array format. </param>
-        
         public static void SaveFile(string[] namesArray)
         {
             // Variables

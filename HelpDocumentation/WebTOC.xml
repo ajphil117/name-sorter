@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="7f0cfa31-e403-4a69-b9f3-0812382bf2ea" Title="name_sorter Namespace" Url="html/N-name_sorter.htm">
+    <HelpTOCNode Id="80a6820a-a7b9-44fc-ba46-8c62dec38209" Title="FileOperation Class" Url="html/T-name_sorter.FileOperation.htm">
+      <HelpTOCNode Title="FileOperation Members" Url="html/AllMembers.T-name_sorter.FileOperation.htm" />
+      <HelpTOCNode Id="59a54bd9-4fef-4b97-ac77-1faeb79ee148" Title="FileOperation Methods" Url="html/Methods.T-name_sorter.FileOperation.htm">
+        <HelpTOCNode Title="LoadFile Method " Url="html/M-name_sorter.FileOperation.LoadFile.htm" />
+        <HelpTOCNode Title="SaveFile Method " Url="html/M-name_sorter.FileOperation.SaveFile.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f06f41d0-ab4d-4254-bdf6-86541e69ede3" Title="InvalidNamesFileException Class" Url="html/T-name_sorter.InvalidNamesFileException.htm">
+      <HelpTOCNode Title="InvalidNamesFileException Members" Url="html/AllMembers.T-name_sorter.InvalidNamesFileException.htm" />
+      <HelpTOCNode Id="da7f82d7-846a-4390-a690-4d4eb6868e2f" Title="InvalidNamesFileException Constructor " Url="html/Overload-name_sorter.InvalidNamesFileException.-ctor.htm">
+        <HelpTOCNode Title="InvalidNamesFileException Constructor " Url="html/M-name_sorter.InvalidNamesFileException.-ctor.htm" />
+        <HelpTOCNode Title="InvalidNamesFileException Constructor (String)" Url="html/M-name_sorter.InvalidNamesFileException.-ctor_1.htm" />
+        <HelpTOCNode Title="InvalidNamesFileException Constructor (String, Exception)" Url="html/M-name_sorter.InvalidNamesFileException.-ctor_2.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="074a9eb9-383f-4406-bb04-99e91c599adf" Title="Names Class" Url="html/T-name_sorter.Names.htm">
+      <HelpTOCNode Title="Names Members" Url="html/AllMembers.T-name_sorter.Names.htm" />
+      <HelpTOCNode Title="Names Constructor " Url="html/M-name_sorter.Names.-ctor.htm" />
+      <HelpTOCNode Id="b757eaa5-2b24-4375-8d05-0c7b8a0c9338" Title="Names Methods" Url="html/Methods.T-name_sorter.Names.htm">
+        <HelpTOCNode Title="Equals Method " Url="html/M-name_sorter.Names.Equals.htm" />
+        <HelpTOCNode Title="GetHashCode Method " Url="html/M-name_sorter.Names.GetHashCode.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/M-name_sorter.Names.ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8170b29e-c39d-4f9e-812a-79d506d5f9bd" Title="Names Properties" Url="html/Properties.T-name_sorter.Names.htm">
+        <HelpTOCNode Title="GivenNames Property " Url="html/P-name_sorter.Names.GivenNames.htm" />
+        <HelpTOCNode Title="LastName Property " Url="html/P-name_sorter.Names.LastName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Program Class" Url="html/T-name_sorter.Program.htm" />
+    <HelpTOCNode Id="d45bce09-7503-4c71-852e-59a3fc70e61d" Title="SortingAlgorithm Class" Url="html/T-name_sorter.SortingAlgorithm.htm">
+      <HelpTOCNode Title="SortingAlgorithm Members" Url="html/AllMembers.T-name_sorter.SortingAlgorithm.htm" />
+      <HelpTOCNode Id="0173c28b-d735-4c73-9dd2-d3419cbfc4d6" Title="SortingAlgorithm Methods" Url="html/Methods.T-name_sorter.SortingAlgorithm.htm">
+        <HelpTOCNode Title="SortNames Method " Url="html/M-name_sorter.SortingAlgorithm.SortNames.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="e2ea150d-d996-46d5-9c1b-f46e336b8243" Title="name_sorter.tests Namespace" Url="html/N-name_sorter.tests.htm">
+    <HelpTOCNode Id="4dc8657d-bd32-4a3c-a200-437e907a68ff" Title="LoadFileTester Class" Url="html/T-name_sorter.tests.LoadFileTester.htm">
+      <HelpTOCNode Title="LoadFileTester Members" Url="html/AllMembers.T-name_sorter.tests.LoadFileTester.htm" />
+      <HelpTOCNode Id="481ba0b3-c5b6-4b4d-8d07-de96e4e73305" Title="LoadFileTester Methods" Url="html/Methods.T-name_sorter.tests.LoadFileTester.htm">
+        <HelpTOCNode Title="EmptyFileTest Method " Url="html/M-name_sorter.tests.LoadFileTester.EmptyFileTest.htm" />
+        <HelpTOCNode Title="ImportTest Method " Url="html/M-name_sorter.tests.LoadFileTester.ImportTest.htm" />
+        <HelpTOCNode Title="InvalidNamesTest Method " Url="html/M-name_sorter.tests.LoadFileTester.InvalidNamesTest.htm" />
+        <HelpTOCNode Title="InvalidPathTest Method " Url="html/M-name_sorter.tests.LoadFileTester.InvalidPathTest.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="267eceb0-fe17-462e-844a-b51d314495fd" Title="NamesListGenerator Class" Url="html/T-name_sorter.tests.NamesListGenerator.htm">
+      <HelpTOCNode Title="NamesListGenerator Members" Url="html/AllMembers.T-name_sorter.tests.NamesListGenerator.htm" />
+      <HelpTOCNode Id="acd3683c-553f-425b-b128-a82e46c07602" Title="NamesListGenerator Methods" Url="html/Methods.T-name_sorter.tests.NamesListGenerator.htm">
+        <HelpTOCNode Title="GenerateNamesList Method " Url="html/M-name_sorter.tests.NamesListGenerator.GenerateNamesList.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="c603cf56-9077-4b57-893f-7e0477492fd5" Title="NamesTester Class" Url="html/T-name_sorter.tests.NamesTester.htm">
+      <HelpTOCNode Title="NamesTester Members" Url="html/AllMembers.T-name_sorter.tests.NamesTester.htm" />
+      <HelpTOCNode Id="d44e72ef-8850-4926-9b4f-f75481117f25" Title="NamesTester Methods" Url="html/Methods.T-name_sorter.tests.NamesTester.htm">
+        <HelpTOCNode Title="EqualsTest Method " Url="html/M-name_sorter.tests.NamesTester.EqualsTest.htm" />
+        <HelpTOCNode Title="NotEqualTest Method " Url="html/M-name_sorter.tests.NamesTester.NotEqualTest.htm" />
+        <HelpTOCNode Title="ToStringTest Method " Url="html/M-name_sorter.tests.NamesTester.ToStringTest.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5663b90c-a859-4b1b-a557-7a0555aec9e7" Title="SaveFileTester Class" Url="html/T-name_sorter.tests.SaveFileTester.htm">
+      <HelpTOCNode Title="SaveFileTester Members" Url="html/AllMembers.T-name_sorter.tests.SaveFileTester.htm" />
+      <HelpTOCNode Id="697ccc3c-4d69-4dd3-8f55-dffafa189b45" Title="SaveFileTester Methods" Url="html/Methods.T-name_sorter.tests.SaveFileTester.htm">
+        <HelpTOCNode Title="SimpleSaveTest Method " Url="html/M-name_sorter.tests.SaveFileTester.SimpleSaveTest.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="30d44c79-9470-46dc-83fd-6db963087b0e" Title="SortNamesTester Class" Url="html/T-name_sorter.tests.SortNamesTester.htm">
+      <HelpTOCNode Title="SortNamesTester Members" Url="html/AllMembers.T-name_sorter.tests.SortNamesTester.htm" />
+      <HelpTOCNode Id="49ae603e-dea7-40bf-ba67-74cb4e052e48" Title="SortNamesTester Methods" Url="html/Methods.T-name_sorter.tests.SortNamesTester.htm">
+        <HelpTOCNode Title="SameGivenNamesTest Method " Url="html/M-name_sorter.tests.SortNamesTester.SameGivenNamesTest.htm" />
+        <HelpTOCNode Title="SameLastNameTest Method " Url="html/M-name_sorter.tests.SortNamesTester.SameLastNameTest.htm" />
+        <HelpTOCNode Title="SimpleSortTest Method " Url="html/M-name_sorter.tests.SortNamesTester.SimpleSortTest.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

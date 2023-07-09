@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using name_sorter;
 
 namespace name_sorter.tests
 {
@@ -15,7 +16,7 @@ namespace name_sorter.tests
         /// This test tests the LoadFile method under normal circumstances.
         /// </summary>
         [TestMethod]
-        public void importTest()
+        public void ImportTest()
         {
             // Variables
             string filePath = "samples/simpleNames.txt";
@@ -50,7 +51,7 @@ namespace name_sorter.tests
                 "Ritter"
             };
 
-            namesExpected = NamesListGenerator.namesListGenerator(givenNames, lastNames);
+            namesExpected = NamesListGenerator.GenerateNamesList(givenNames, lastNames);
 
             // Load sample file to list            
             namesActual = FileOperation.LoadFile(filePath);
@@ -63,7 +64,7 @@ namespace name_sorter.tests
         /// This test tests the LoadFile method when the file is empty.
         /// </summary>
         [TestMethod]
-        public void emptyFileTest()
+        public void EmptyFileTest()
         {
             // Variables
             string filePath = "samples/empty.txt";
@@ -77,10 +78,10 @@ namespace name_sorter.tests
         }
 
         /// <summary>
-        /// This test tests the LoadFile method throws an expection when the file is invalid.
+        /// This test tests the LoadFile method throws an exception when the file is invalid.
         /// </summary>
         [TestMethod]
-        public void invalidNamesTest()
+        public void InvalidNamesTest()
         {
             // Variables
             string filePath = "samples/noGiven.txt";
@@ -90,10 +91,10 @@ namespace name_sorter.tests
         }
 
         /// <summary>
-        /// This test tests the LoadFile method throws an expection when the file path is invalid.
+        /// This test tests the LoadFile method throws an exception when the file path is invalid.
         /// </summary>
         [TestMethod]
-        public void invalidPathTest()
+        public void InvalidPathTest()
         {
             // Variables
             string filePath = "fileNotExist.txt";
