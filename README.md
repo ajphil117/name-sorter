@@ -26,30 +26,52 @@ You should see the sorted names printed to the window and the 'sorted-names-list
 ## Usage Tutorial:
 1. I have a file called 'unsorted-names-list.txt' with the contents:
 >Janet Parsons
+
 >Vaughn Lewis
+
 >Adonis Julius Archer
+
 >Shelby Nathan Yoder
+
 >Marin Alvarez
+
 >London Lindsey
+
 >Beau Tristan Bentley
+
 >Leo Gardner
+
 >Hunter Uriah Mathew Clarke
+
 >Mikayla Lopez
+
 >Frankie Conner Ritter
+
 I have saved this file in my "name-sorter" base directory.
 
 2. Next, I open the Windows Command Prompt and navigate to base directory using *cd "C:\Users\myuser\Visual Studio\name-sorter"*
 
 3. I then run the program using *name-sorter ./unsorted-names-list.txt* and get the following outputted to the console:
 >Marin Alvarez
+
 >Adonis Julius Archer
+
 >Beau Tristan Bentley
+
 >Hunter Uriah Mathew Clarke
+
 >Leo Gardner
+
 >Vaughn Lewis
+
 >London Lindsey
+
 >Mikayla Lopez
+
 >Janet Parsons
+
 >Frankie Conner Ritter
+
 >Shelby Nathan Yoder
+
 There is also now a file called 'sorted-names-list.txt' in my base directory.
